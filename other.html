@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random user chat</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #369ce0, #e74c3c); /* Gradient Background */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+  }
+
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  .nav-link:hover {
+    color: #f1168f;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-brand">
+      <h2><u>Chat</u> <u>with</u> <u>me</u></h2>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link" href="privacy.html">Privacy</a>
+      <a class="nav-link" href="contact.html">contact</a>
+      <a class="nav-link" href="more.html">More</a>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Welcome🙏</h1>
+   
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .user-message {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .bot-message {
+    background-color: #c1ffc1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .input-container {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .input-field {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .send-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .send-button:hover{
+background-color: #38ddf3
+
+  }
+</style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot-message">Hello! कैसे है आप लोग ?</div>
+
+    </div>
+    <div class="input-container">
+      <input type="text" class="input-field" id="userInput" placeholder="Type your message...">
+      <button class="send-button" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var userInput = document.getElementById("userInput").value;
+      var chatMessages = document.getElementById("chatMessages");
+
+      var userMessage = document.createElement("div");
+      userMessage.className = "user-message";
+      userMessage.textContent = userInput;
+
+      chatMessages.appendChild(userMessage);
+
+      // Simulate a bot reply
+      var botMessage = document.createElement("div");
+      botMessage.className = "bot-message";
+      botMessage.textContent = "चलिए फिर से शुरू करते है! ❣";
+      
+      chatMessages.appendChild(botMessage);
+
+      // Clear user input field
+      document.getElementById("userInput").value = "";
+    }
+  </script>
+</body>
+</html>
+
+  </div>
+</body>
+</html>
